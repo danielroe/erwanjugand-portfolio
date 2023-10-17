@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "include": ["*.config.*"],
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "types": ["node"]
+  }
+}

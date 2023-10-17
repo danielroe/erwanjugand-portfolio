@@ -1,0 +1,61 @@
+{
+  "private": true,
+  "scripts": {
+    "analyze": "nuxt analyze",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "test:unit": "vitest run --silent",
+    "check:prettier": "prettier --check .",
+    "check:eslint": "eslint --ext .ts,.js,.vue .",
+    "check:stylelint": "stylelint **/*.{scss,vue}",
+    "check:ts": "vue-tsc --noEmit",
+    "check:all": "pnpm check:prettier && pnpm check:eslint && pnpm check:stylelint && pnpm check:ts",
+    "check:ci": "pnpm nuxi prepare && pnpm check:all",
+    "fix:prettier": "prettier --loglevel warn --write .",
+    "fix:eslint": "pnpm check:eslint --fix",
+    "fix:stylelint": "pnpm check:stylelint --fix",
+    "fix:svg": "svgo public --recursive --quiet",
+    "fix:image": "sh parse-image.sh",
+    "fix:all": "pnpm fix:prettier && pnpm fix:eslint && pnpm fix:stylelint && pnpm fix:svg"
+  },
+  "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "6.4.2",
+    "@fortawesome/pro-light-svg-icons": "6.4.2",
+    "@fortawesome/pro-regular-svg-icons": "6.4.2",
+    "@fortawesome/pro-solid-svg-icons": "6.4.2",
+    "@nuxtjs/color-mode": "3.3.0",
+    "@nuxtjs/eslint-config-typescript": "12.1.0",
+    "@nuxtjs/google-fonts": "3.0.2",
+    "@nuxtjs/i18n": "8.0.0-rc.5",
+    "@vueuse/nuxt": "10.4.1",
+    "cypress": "13.3.0",
+    "eslint": "8.51.0",
+    "eslint-config-prettier": "9.0.0",
+    "happy-dom": "12.9.0",
+    "nuxt": "3.7.4",
+    "nuxt-vitest": "0.11.0",
+    "postcss-html": "1.5.0",
+    "prettier": "3.0.3",
+    "sass": "1.69.0",
+    "stylelint": "15.10.3",
+    "stylelint-config-property-sort-order-smacss": "9.1.0",
+    "stylelint-config-standard-scss": "11.0.0",
+    "svgo": "3.0.2",
+    "the-new-css-reset": "1.11.0",
+    "typescript": "5.2.2",
+    "vitest": "0.33.0",
+    "vue-tsc": "1.8.16"
+  },
+  "dependencies": {
+    "@nuxtjs/robots": "3.0.0",
+    "@pinia/nuxt": "0.4.11",
+    "nuxt-cloudflare-analytics": "1.0.8",
+    "v-wave": "1.5.1",
+    "vue-typical": "2.1.0"
+  },
+  "resolutions": {
+    "@types/node": "20"
+  }
+}
