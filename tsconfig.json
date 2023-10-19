@@ -1,11 +1,7 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    },
-    {
-      "path": "./tsconfig.app.json"
-    }
-  ]
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "types": ["vite-plugin-pages/client", "vite-plugin-vue-layouts/client"]
+  }
 }

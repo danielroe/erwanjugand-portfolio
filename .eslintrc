@@ -1,4 +1,6 @@
 {
-  "extends": ["plugin:vue/vue3-recommended", "prettier"],
-  "rules": {}
+  "extends": ["plugin:vue/vue3-strongly-recommended", "prettier"],
+  "rules": {
+    "vue/multi-word-component-names": "off"
+  }
 }
