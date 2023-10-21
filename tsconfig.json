@@ -1,6 +1,8 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "compilerOptions": {
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
     "moduleResolution": "node",
     "types": ["vite-plugin-pages/client", "vite-plugin-vue-layouts/client"]
   }
