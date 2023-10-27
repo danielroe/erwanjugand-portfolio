@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { useHead, type MergeHead } from '@unhead/vue'
+
+const head = computed<MergeHead>(() => {})
+
+useHead(head)
 </script>
 
 <template>
